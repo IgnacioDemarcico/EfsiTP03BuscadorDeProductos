@@ -12,25 +12,33 @@
 </head>
 
 <body>
-  <div class="row section"><nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand">Navbar</a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </nav></div>
-  <div class="row section">
+  <audio id="audio" controls class="d-none">
+    <source type="audio/wav" src="/ladata/dispargod.mp3">
+    </audio>
+  <div class="row section backnav letranav">
     <div class="col-2"></div>
-    <div class="col-8 background titulo"><div class="row">algo algo</div>
-  <div class="row">algo mas chiquito</div><br><br></div>
+    <div class="col-8">hay que poner algo</div>
     <div class="col-2"></div>
   </div>
-  <form class="d-flex" role="search">
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="busco">
-    <button class="btn btn-outline-success" type="button" onclick=buscar()>Search</button>
-  </form>
+  
+  <div class="row section">
+    <div class="col-2"></div>
+    <div class="col-8 background titulo">
+      <br>
+      <div class="row">
+        La Maldita Op Beast
+        <img class="op" src="/ladata/elop.png" onclick="dispararOp()">
+        
+      </div>
+      <div class="row subtitulo">Busca tus productos</div><br>
+      <div class="row"><form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="busco">
+        <button class="btn btn-outline-success" type="button" onclick=buscar()>Search</button>
+      </form></div><br>
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <br><br>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
@@ -41,6 +49,7 @@
   <div id="test1">
   </div>
   <script src="main.js"></script>
+  <img src="/ladata/kill.webp" class="d-none" id="kill">
 </body>
 
 </html>

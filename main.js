@@ -26,3 +26,8 @@ const buscar = async () =>{
         }
     }
 }
+const dispararOp = () => {
+    document.getElementById("audio").play()
+    document.getElementById("kill").classList.remove("d-none")
+    setTimeout(() => document.getElementById("kill").classList.add("d-none"), 2.5 * 1000)
+}
