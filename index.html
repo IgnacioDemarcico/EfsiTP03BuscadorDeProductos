@@ -17,7 +17,16 @@
     </audio>
   <div class="row section backnav letranav">
     <div class="col-2"></div>
-    <div class="col-8">hay que poner algo</div>
+    <div class="col-8"> <div class="nav-item dropdown"></div>
+      <a class="nav-link dropdown-toggle letranav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Categorias
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul></div>
     <div class="col-2"></div>
   </div>
   
@@ -25,15 +34,16 @@
     <div class="col-2"></div>
     <div class="col-8 background titulo">
       <br>
-      <div class="row">
+      <div class="row titulo">
         La Maldita Op Beast
         <img class="op" src="/ladata/elop.png" onclick="dispararOp()">
         
       </div>
       <div class="row subtitulo">Busca tus productos</div><br>
       <div class="row"><form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="busco">
-        <button class="btn btn-outline-success" type="button" onclick=buscar()>Search</button>
+        <input class="form-control me-2 buscador" type="search"
+          placeholder="Buscate algo pa" aria-label="Search">
+        <button class="btn btn-primary boton" type="submit">Search</button>
       </form></div><br>
     </div>
     <div class="col-2"></div>
