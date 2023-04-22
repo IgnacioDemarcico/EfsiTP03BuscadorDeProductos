@@ -25,6 +25,9 @@ const buscar = async () =>{
         if (!producto.title.toUpperCase().includes(busqueda.toUpperCase())){
             document.getElementById(`seccion-${producto.title}`).classList.add("d-none")
         }
+        else if(busqueda==""){
+            cargarProductos()
+        }
     }
 }
 const dispararOp = () => {
