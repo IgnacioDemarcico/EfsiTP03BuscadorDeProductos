@@ -7,12 +7,13 @@ const cargarProductos = async () => {
     const container = document.getElementById("test1")
     for(producto of data.products) {
         container.innerHTML += `
-        <div id="seccion-${producto.title}">
-            <img src=${producto.thumbnail}>
-            <h1>${producto.title}</h1>
-            <span>${producto.description}</span>
-            <span>Marca: ${producto.brand}</span>
+        <div id="seccion-${producto.title}"class="card">
+        <img src="${producto.thumbnail}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">${producto.title}</h5>
+          <p class="card-text">${producto.description}</p>
         </div>
+      </div>
         `
     }
 }
@@ -28,6 +29,7 @@ const buscar = async () =>{
 }
 const dispararOp = () => {
     document.getElementById("audio").play()
+    document.getElementById("killsound").play()
     document.getElementById("kill").classList.remove("d-none")
-    setTimeout(() => document.getElementById("kill").classList.add("d-none"), 2.5 * 1000)
+    setTimeout(() => document.getElementById("kill").classList.add("d-none"), 2.1 * 1000)
 }

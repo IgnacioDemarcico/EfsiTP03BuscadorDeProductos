@@ -14,22 +14,30 @@
 <body>
   <audio id="audio" controls class="d-none">
     <source type="audio/wav" src="/ladata/dispargod.mp3">
-    </audio>
+  </audio>
+  <audio id="killsound" controls class="d-none">
+    <source type="audio/wav" src="/ladata/killsound.mp3">
+  </audio>
   <div class="row section backnav letranav">
     <div class="col-2"></div>
-    <div class="col-8"> <div class="nav-item dropdown"></div>
-      <a class="nav-link dropdown-toggle letranav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <div class="col-8">
+      <div class="nav-item dropdown"></div>
+      <a class="nav-link dropdown-toggle letranav" href="#" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
         Categorias
       </a>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#">Action</a></li>
         <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><hr class="dropdown-divider"></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
         <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul></div>
+      </ul>
+    </div>
     <div class="col-2"></div>
   </div>
-  
+
   <div class="row section">
     <div class="col-2"></div>
     <div class="col-8 background titulo">
@@ -37,18 +45,23 @@
       <div class="row titulo">
         La Maldita Op Beast
         <img class="op" src="/ladata/elop.png" onclick="dispararOp()">
-        
+
       </div>
       <div class="row subtitulo">Busca tus productos</div><br>
-      <div class="row"><form class="d-flex" role="search">
-        <input class="form-control me-2 buscador" type="search"
-          placeholder="Buscate algo pa" aria-label="Search">
-        <button class="btn btn-primary boton" type="submit">Search</button>
-      </form></div><br>
+      <div class="row">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 buscador" type="search" placeholder="Buscate algo pa" id="busco"
+            aria-label="Search">
+          <button class="btn btn-primary boton" type="button" onclick="buscar()">Search</button>
+        </form>
+      </div><br>
     </div>
     <div class="col-2"></div>
   </div>
   <br><br>
+  <div id="test1" class="containercard">
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
@@ -56,8 +69,7 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
 
-  <div id="test1">
-  </div>
+  
   <script src="main.js"></script>
   <img src="/ladata/kill.webp" class="d-none" id="kill">
 </body>

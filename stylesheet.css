@@ -60,3 +60,13 @@ background-size: cover;
     border-radius: 30px;
    margin-left: -4rem;
 }
+.containercard{
+display: flex;
+flex-direction: row;
+
+
+}
+.card{
+    width: 18rem;
+    
+}
