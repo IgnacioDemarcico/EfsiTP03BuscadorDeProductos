@@ -25,7 +25,7 @@ const buscar = async () =>{
             document.getElementById(`seccion-${producto.title}`).classList.add("d-none")
         }
         else if(busqueda==""){
-            cargarProductos()
+            document.getElementById(`seccion-${producto.title}`).classList.remove("d-none")
         }
     }
 }
